@@ -340,3 +340,29 @@ export const todaySnapshot = {
   highlight: 'Enjoyed garden walk and art class today',
   lastCheckin: '2 hours ago',
 };
+export const loyaltyFeatures = [
+  {
+    id: 'weekly-summary',
+    title: 'Weekly Personalized Summary',
+    description: 'Comprehensive care report delivered every Sunday with photos and caregiver notes.',
+    icon: 'FileText',
+  },
+  {
+    id: 'nurse-checkin',
+    title: 'Proactive Nurse Check-in',
+    description: 'Scheduled calls from our nursing team to discuss your loved one\'s wellbeing.',
+    icon: 'Phone',
+  },
+  {
+    id: 'qa-feature',
+    title: '1-Click Q&A',
+    description: 'Ask any question and receive a response within our guaranteed SLA (typically under 4 hours).',
+    icon: 'MessageSquare',
+  },
+  {
+    id: 'safety-banner',
+    title: 'Weekly Safety Checks',
+    description: 'Visual confirmation that all safety protocols have been completed.',
+    icon: 'ShieldCheck',
+  },
+];
