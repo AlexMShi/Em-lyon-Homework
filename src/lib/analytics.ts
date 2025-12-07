@@ -127,3 +127,10 @@ export function endReadTimeTracking(page: string): void {
     startTime = null;
   }
 }
+export const events = {
+  portalWeeklySummaryView: () => trackEvent('portal_weekly_summary_view'),
+  checkinRequestSubmit: () => trackEvent('checkin_request_submit'),
+  qaSubmit: () => trackEvent('qa_submit'),
+  referralSubmit: () => trackEvent('referral_submit'),
+  reviewIntentClick: () => trackEvent('review_intent_click'),
+};
