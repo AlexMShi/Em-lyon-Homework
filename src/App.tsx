@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // ✅ 改这里：BrowserRouter -> HashRouter
 import Index from "./pages/Index";
 import Transparency from "./pages/Transparency";
 import Reviews from "./pages/Reviews";
@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter> {/* ✅ 改这里：<BrowserRouter> -> <HashRouter> */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/transparency" element={<Transparency />} />
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/debug/analytics" element={<DebugAnalytics />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
